@@ -8,6 +8,9 @@ WORKDIR /app
 COPY . /app
 
 # Install dependencies from the build directory
+RUN pip install -r requirements.txt
+
+# Install dependencies from the build directory
 RUN pip install .
 
 # Set environment variables required by the script
